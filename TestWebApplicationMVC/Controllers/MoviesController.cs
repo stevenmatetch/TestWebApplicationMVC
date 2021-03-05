@@ -13,12 +13,33 @@ namespace TestWebApplicationMVC.Controllers
     public class MoviesController : Controller
     {
         private MovieDBContext db = new MovieDBContext();
-
+        User ldb = new User();
         // GET: Movies
         //public ActionResult Index()
         //{
         //    return View(db.Movies.ToList());
         //}
+       // public ActionResult Index( User log)
+       //{
+       //     //var user = ldb.users.where(x =>.x.username == log.username && x.password == log.password).count();
+       //     //if(user > 0)
+       //     //{
+       //     //    return RedirectToAction("Dashbord");
+
+       //     //}
+       //     //else
+       //     //{
+       //     //    return View();
+       //     //}
+            
+       // }
+        public ActionResult Dashbord()
+        {
+            return View();
+        }
+
+
+
         public ActionResult Index(string movieGenre, string searchString)
         {
             var GenreLst = new List<string>();
