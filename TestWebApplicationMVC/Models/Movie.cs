@@ -20,5 +20,7 @@ namespace TestWebApplicationMVC.Models
         public DbSet<Movie> Movies { get; set; }
 
         public System.Data.Entity.DbSet<TestWebApplicationMVC.Models.User> Users { get; set; }
+
+        //public System.Data.Entity.DbSet<TestWebApplicationMVC.Models.User> Users { get; set; }
     }
 }
